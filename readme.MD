@@ -8,6 +8,7 @@
 	java 1.8
 	git
 	maven
+	postman
 
  Git repository needs to be cloned on the local machine and run following command to start an application
 
@@ -24,10 +25,10 @@
 
 #### Compute Price
 Returns total cost for the given input.
-> POST: http://localhost:880/api/computePrice
+> POST: http://localhost:8080/api/computePrice
 
-**Parameters:**
-- query: (Required) order as string
+**Parameter:**
+- query: (Required) 
 
 Sample Request : 
 {
