@@ -26,8 +26,8 @@
 Returns total cost for the given input.
 > POST: http://localhost:880/api/computePrice
 
-**Parameters:**
-- query: (Required) order as string
+**Parameter:**
+- query: (Required) 
 
 Sample Request : 
 {
