@@ -31,14 +31,17 @@ public class BeverageFactoryController {
         if (StringUtils.isEmpty(requestBean.getQuery())) {
             responseBean.setMessage(AppConstants.ORDER_PROCESSED_FAILURE);
             responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);
-        } else{
-            Map<String,Float> priceMap  = service.computePrice(requestBean);
-            if (priceMap.containsKey("error")){
+        } else {
+            Map<String, Float> priceMap = service.computePrice(requestBean);
+            if (priceMap.containsKey("error")) {
                 responseBean.setMessage(AppConstants.CANNOT_EXCLUDE_ALL_INGREDIENT);
+                responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);
+            }else  if (priceMap.containsKey("invalid")){
+                responseBean.setMessage(AppConstants.INVALID_QUERY_PARAMETER);
                 responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);
             }else {
                 responseBean.setTotalCost(String.valueOf(priceMap.remove("totalPrice")));
-                responseBean.setPrices(priceMap);
+                responseBean.setIndividualPrices(priceMap);
                 responseBean.setMessage(AppConstants.ORDER_PROCESSED_SUCCESS);
                 responseBean.setHttpStatus(HttpStatus.OK);
             }
