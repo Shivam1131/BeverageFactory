@@ -1,3 +1,4 @@
+com/bf/constants/AppConstants.class
 com/bf/service/BeverageFactoryService.class
 com/bf/BevearageFactoryApplication.class
 com/bf/controller/BeverageFactoryController.class

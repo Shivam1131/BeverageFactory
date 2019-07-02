@@ -11,7 +11,7 @@ public class ResponseBean {
     private String status;
     private String message;
     private HttpStatus httpStatus;
-    private Map<String, Object> data;
-
+    private String totalCost;
+    private Map<String, Float> prices;
 
 }
