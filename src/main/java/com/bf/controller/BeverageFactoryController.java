@@ -26,8 +26,6 @@ public class BeverageFactoryController {
     public ResponseEntity<ResponseBean> computePriceOfAnOrder(@RequestBody RequestBean requestBean) {
         ResponseBean responseBean = new ResponseBean();
 
-        System.out.println("Query : " + requestBean.getQuery());
-
         if (StringUtils.isEmpty(requestBean.getQuery())) {
             responseBean.setMessage(AppConstants.ORDER_PROCESSED_FAILURE);
             responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);

@@ -41,7 +41,6 @@ public class BeverageFactoryService {
 
         for (String str : requestBean.getQuery()) {
             float price = 0.00F;
-            System.out.println("Processing str : " + str);
             List<String> menu = Arrays.asList(str.split(",")).stream().map(String::trim).map(x -> x.replace("-", "")).collect(Collectors.toList());
 
             if(null!=itemAndIngredientsMap.get(menu.get(0).toLowerCase())) {
