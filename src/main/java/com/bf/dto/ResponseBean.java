@@ -6,6 +6,9 @@ import org.springframework.http.HttpStatus;
 
 import java.util.Map;
 
+/**
+ * @author Sadashiv Kadam
+ */
 @Data
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class ResponseBean {

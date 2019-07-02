@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+/**
+ * @author Sadashiv Kadam
+ */
 @RestController
 @RequestMapping("/api/")
 public class BeverageFactoryController {
@@ -22,31 +25,46 @@ public class BeverageFactoryController {
     @Autowired
     BeverageFactoryService service;
 
+    /**
+     * @param requestBean contains order query
+     * @return ResponseBean along with order details
+     * @apiNote API to compute cost of an order
+     */
     @PostMapping("computePrice")
     public ResponseEntity<ResponseBean> computePriceOfAnOrder(@RequestBody RequestBean requestBean) {
         ResponseBean responseBean = new ResponseBean();
+        try {
+            if (StringUtils.isEmpty(requestBean.getQuery())) {
+                responseBean.setStatus(AppConstants.FAILURE);
+                responseBean.setMessage(AppConstants.ORDER_PROCESSED_FAILURE);
+                responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);
+            } else {
+                Map<String, Float> priceMap = service.computePrice(requestBean);
 
-        if (StringUtils.isEmpty(requestBean.getQuery())) {
-            responseBean.setMessage(AppConstants.ORDER_PROCESSED_FAILURE);
-            responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);
-        } else {
-            Map<String, Float> priceMap = service.computePrice(requestBean);
-            if (priceMap.containsKey("error")) {
-                responseBean.setMessage(AppConstants.CANNOT_EXCLUDE_ALL_INGREDIENT);
-                responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);
-            }else  if (priceMap.containsKey("invalid")){
-                responseBean.setMessage(AppConstants.INVALID_QUERY_PARAMETER);
-                responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);
-            }else {
-                responseBean.setTotalCost(String.valueOf(priceMap.remove("totalPrice")));
-                responseBean.setIndividualPrices(priceMap);
-                responseBean.setMessage(AppConstants.ORDER_PROCESSED_SUCCESS);
-                responseBean.setHttpStatus(HttpStatus.OK);
+                if (priceMap.containsKey("error")) {
+                    responseBean.setStatus(AppConstants.FAILURE);
+                    responseBean.setMessage(AppConstants.CANNOT_EXCLUDE_ALL_INGREDIENT);
+                    responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);
+                } else if (priceMap.containsKey("invalid")) {
+
+                    responseBean.setMessage(AppConstants.FAILURE);
+                    responseBean.setMessage(AppConstants.INVALID_QUERY_PARAMETER);
+                    responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);
+                } else {
+
+                    responseBean.setTotalCost(String.valueOf(priceMap.remove("totalPrice")));
+                    responseBean.setIndividualPrices(priceMap);
+                    responseBean.setStatus(AppConstants.SUCCESS);
+                    responseBean.setMessage(AppConstants.ORDER_PROCESSED_SUCCESS);
+                    responseBean.setHttpStatus(HttpStatus.OK);
+                }
             }
-
+        } catch (Exception e) {
+            responseBean.setStatus(AppConstants.FAILURE);
+            responseBean.setMessage(AppConstants.INVALID_QUERY_PARAMETER);
+            responseBean.setHttpStatus(HttpStatus.BAD_REQUEST);
         }
 
         return new ResponseEntity<>(responseBean, responseBean.getHttpStatus());
     }
-
 }
