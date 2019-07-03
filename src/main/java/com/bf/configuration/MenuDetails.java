@@ -25,6 +25,13 @@ public class MenuDetails {
     private static final String SODA = "soda";
     private static final String MINT = "mint";
 
+    //Base Product price
+    private static final Float STRAWBERRIES_BASE_PRICE = 5.0F;
+    private static final Float BANANA_BASE_PRICE = 4.0F;
+    private static final Float TEA_BASE_PRICE = 2.0F;
+    private static final Float COFFEE_BASE_PRICE = 3.0F;
+    private static final Float LEMON_BASE_PRICE = 5.5F;
+
 
     private MenuDetails() {
         super();
@@ -42,11 +49,16 @@ public class MenuDetails {
 
     public static Map<String, Float> getMenuMap() {
         Map<String, Float> menuMap = new HashMap<>();
-        menuMap.put(COFFEE, 5F);
-        menuMap.put(CHAI, 4F);
-        menuMap.put(BANANA_SMOOTHIE, 6F);
-        menuMap.put(STRAWBERRY_SHAKE, 7F);
-        menuMap.put(MOJITO, 7.5F);
+        menuMap.put(COFFEE, COFFEE_BASE_PRICE
+                + getIngredientMap().get(MILK)+getIngredientMap().get(WATER)+getIngredientMap().get(SUGAR));
+        menuMap.put(CHAI, TEA_BASE_PRICE
+                + getIngredientMap().get(MILK)+getIngredientMap().get(WATER)+getIngredientMap().get(SUGAR) );
+        menuMap.put(BANANA_SMOOTHIE, BANANA_BASE_PRICE
+                + getIngredientMap().get(MILK)+getIngredientMap().get(WATER)+getIngredientMap().get(SUGAR));
+        menuMap.put(STRAWBERRY_SHAKE, STRAWBERRIES_BASE_PRICE
+                + getIngredientMap().get(MILK)+getIngredientMap().get(WATER)+getIngredientMap().get(SUGAR));
+        menuMap.put(MOJITO, LEMON_BASE_PRICE
+                + getIngredientMap().get(SODA)+getIngredientMap().get(WATER)+getIngredientMap().get(SUGAR)+getIngredientMap().get(MINT));
         return menuMap;
     }
 
