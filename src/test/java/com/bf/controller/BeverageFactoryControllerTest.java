@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.platform.commons.util.StringUtils;
 import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -79,6 +80,17 @@ public class BeverageFactoryControllerTest {
         MvcResult result = mockMvc.perform(post("/api/computePrice").contentType(MediaType.APPLICATION_JSON)
                 .content(jsonStr))
                 .andReturn();
-        Assert.assertTrue(result.getResponse().getContentAsString().contains("Invalid query parameter"));
+        Assert.assertTrue(result.getResponse().getContentAsString().contains("Invalid ingredient found in the order."));
+    }
+
+    @Test
+    public void nullRequestBean() throws Exception {
+
+        String jsonStr = objectMapper.writeValueAsString(null);
+        MvcResult result = mockMvc.perform(post("/api/computePrice").contentType(MediaType.APPLICATION_JSON)
+                .content(jsonStr))
+                .andReturn();
+        Assert.assertTrue(StringUtils.isBlank(result.getResponse().getContentAsString()));
     }
 }
+

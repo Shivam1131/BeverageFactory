@@ -1,12 +1,11 @@
 package com.bf.service;
 
 import com.bf.dto.RequestBean;
-
-import java.util.Map;
+import com.bf.dto.ServiceResponseBean;
 
 /**
  * @author Sadashiv Kadam
  */
 public interface FactoryService {
-    Map<String, Float> computePrice(RequestBean requestBean);
+    ServiceResponseBean computePrice(RequestBean requestBean);
 }

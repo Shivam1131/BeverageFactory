@@ -1,4 +1,6 @@
-package com.bf.constants;
+package com.bf.configuration;
+
+import com.bf.constants.AppConstants;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -8,9 +10,9 @@ import java.util.Map;
 /**
  * @author Sadashiv Kadam
  */
-public class AppData {
+public class MenuDetails {
 
-    private AppData() {
+    private MenuDetails() {
         super();
     }
 

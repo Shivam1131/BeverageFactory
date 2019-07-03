@@ -11,7 +11,7 @@ import java.util.Map;
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
-public class ResponseBean {
+public class ServiceResponseBean {
 
     private String status;
     private String message;

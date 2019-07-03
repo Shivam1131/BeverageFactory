@@ -1,17 +1,20 @@
 package com.bf.service;
 
+import com.bf.constants.AppConstants;
 import com.bf.dto.RequestBean;
+import com.bf.dto.ServiceResponseBean;
+import com.bf.serviceimpl.BeverageFactoryServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.HttpStatus;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 
 import java.util.Arrays;
-import java.util.Map;
 
 /**
  * @author Sadashiv Kadam
@@ -29,16 +32,19 @@ public class BeverageFactoryServiceTest {
     public void successTestWithValidData() {
         RequestBean requestBean = new RequestBean();
         requestBean.setQuery(Arrays.asList("Chai, -sugar", "Chai", "Coffee, -water,-sugar", "Mojito,-sugar,-mint,-soda"));
-        Map<String, Float> priceMap = new BeverageFactoryService().computePrice(requestBean);
-        Assert.assertTrue(!CollectionUtils.isEmpty(priceMap));
+        ServiceResponseBean responseBean = new BeverageFactoryServiceImpl().computePrice(requestBean);
+        Assert.assertTrue(responseBean.getMessage().equals(AppConstants.ORDER_PROCESSED_SUCCESS));
+        Assert.assertTrue(responseBean.getStatus().equals(AppConstants.SUCCESS));
+        Assert.assertTrue(!StringUtils.isEmpty(responseBean.getTotalCost()));
     }
 
     @Test
     public void failureTestWithInvalidData() {
         RequestBean requestBean = new RequestBean();
         requestBean.setQuery(Arrays.asList("Chai, -sugar,-test"));
-        Map<String, Float> priceMap = new BeverageFactoryService().computePrice(requestBean);
-        Assert.assertTrue(priceMap.containsKey("invalid"));
+        ServiceResponseBean responseBean = new BeverageFactoryServiceImpl().computePrice(requestBean);
+        Assert.assertTrue(responseBean.getMessage().equals("Invalid ingredient found in the order."));
+        Assert.assertTrue(responseBean.getHttpStatus().equals(HttpStatus.NOT_ACCEPTABLE));
     }
 
 }
