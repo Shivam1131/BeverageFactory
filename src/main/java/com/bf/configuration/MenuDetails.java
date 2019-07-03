@@ -1,7 +1,5 @@
 package com.bf.configuration;
 
-import com.bf.constants.AppConstants;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -12,37 +10,53 @@ import java.util.Map;
  */
 public class MenuDetails {
 
+    //Items
+    private static final String CHAI = "chai";
+    private static final String BANANA_SMOOTHIE = "banana smoothie";
+    private static final String COFFEE = "coffee";
+    private static final String STRAWBERRY_SHAKE = "strawberry shake";
+    private static final String MOJITO = "mojito";
+
+    //Ingredeients
+    private static final String SUGAR = "sugar";
+    private static final String WATER = "water";
+    private static final String MILK = "milk";
+    private static final String BANANA = "sugar";
+    private static final String SODA = "soda";
+    private static final String MINT = "mint";
+
+
     private MenuDetails() {
         super();
     }
 
     public static Map<String, List<String>> getItemIngredientMap() {
         Map<String, List<String>> itemAndIngredientsMap = new HashMap<>();
-        itemAndIngredientsMap.put("coffee", Arrays.asList("milk", AppConstants.SUGAR, AppConstants.WATER));
-        itemAndIngredientsMap.put("chai", Arrays.asList("milk", AppConstants.SUGAR, AppConstants.WATER));
-        itemAndIngredientsMap.put("banana smoothie", Arrays.asList("banana", "milk", AppConstants.SUGAR, AppConstants.WATER));
-        itemAndIngredientsMap.put("strawberry shake", Arrays.asList("milk", AppConstants.SUGAR, AppConstants.WATER));
-        itemAndIngredientsMap.put("mojito", Arrays.asList(AppConstants.SUGAR, AppConstants.WATER, "soda", "mint"));
+        itemAndIngredientsMap.put(COFFEE, Arrays.asList(MILK, SUGAR, WATER));
+        itemAndIngredientsMap.put(CHAI, Arrays.asList(MILK, SUGAR, WATER));
+        itemAndIngredientsMap.put(BANANA_SMOOTHIE, Arrays.asList(BANANA, MILK, SUGAR, WATER));
+        itemAndIngredientsMap.put(STRAWBERRY_SHAKE, Arrays.asList(MILK, SUGAR, WATER));
+        itemAndIngredientsMap.put(MOJITO, Arrays.asList(SUGAR, WATER, SODA, MINT));
         return itemAndIngredientsMap;
     }
 
     public static Map<String, Float> getMenuMap() {
         Map<String, Float> menuMap = new HashMap<>();
-        menuMap.put("coffee", 5F);
-        menuMap.put("chai", 4F);
-        menuMap.put("banana smoothie", 6F);
-        menuMap.put("strawberry shake", 7F);
-        menuMap.put("mojito", 7.5F);
+        menuMap.put(COFFEE, 5F);
+        menuMap.put(CHAI, 4F);
+        menuMap.put(BANANA_SMOOTHIE, 6F);
+        menuMap.put(STRAWBERRY_SHAKE, 7F);
+        menuMap.put(MOJITO, 7.5F);
         return menuMap;
     }
 
     public static Map<String, Float> getIngredientMap() {
         Map<String, Float> ingredientsMap = new HashMap<>();
-        ingredientsMap.put("milk", 1F);
-        ingredientsMap.put(AppConstants.SUGAR, 0.5F);
-        ingredientsMap.put("soda", 0.5F);
-        ingredientsMap.put("mint", 0.5F);
-        ingredientsMap.put(AppConstants.WATER, 0.5F);
+        ingredientsMap.put(MILK, 1F);
+        ingredientsMap.put(SUGAR, 0.5F);
+        ingredientsMap.put(SODA, 0.5F);
+        ingredientsMap.put(MINT, 0.5F);
+        ingredientsMap.put(WATER, 0.5F);
         return ingredientsMap;
     }
 }
