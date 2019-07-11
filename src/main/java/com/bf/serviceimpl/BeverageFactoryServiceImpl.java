@@ -67,7 +67,7 @@ public class BeverageFactoryServiceImpl implements FactoryService {
                     if (!menu.containsAll(itemAndIngredientsMap.get(menu.get(0).toLowerCase()))) {
                         float price = menuMap.get(menu.get(0).toLowerCase());
                         for (int i = 1; i < menu.size(); i++) {
-                            price -= ingredientsMap.get(menu.get(i).replace("-", "").trim());
+                            price -= ingredientsMap.get(menu.get(i));
                         }
                         totalPrice += price;
                         priceMap.put(str, price);
