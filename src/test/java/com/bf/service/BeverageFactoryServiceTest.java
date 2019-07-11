@@ -23,10 +23,6 @@ import java.util.Arrays;
 @SpringBootTest
 public class BeverageFactoryServiceTest {
 
-    @BeforeEach
-    public void init() {
-        MockitoAnnotations.initMocks(this);
-    }
 
     @Test
     public void successTestWithValidData() {

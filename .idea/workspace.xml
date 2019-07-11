@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a30a0d9-184c-4bcd-b42c-24c991fd6598" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8ad0a4201bb8c615e687df62ff8815226a59c790" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8ad0a4201bb8c615e687df62ff8815226a59c790" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bf/configuration/MenuDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bf/configuration/MenuDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bf/constants/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bf/constants/AppConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bf/configuration/MenuDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bf/configuration/MenuDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bf/serviceimpl/BeverageFactoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bf/serviceimpl/BeverageFactoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bf/service/BeverageFactoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bf/service/BeverageFactoryServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bf/constants/AppConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bf/constants/AppConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bf/controller/BeverageFactoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bf/controller/BeverageFactoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bf/serviceimpl/BeverageFactoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bf/serviceimpl/BeverageFactoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/bf/service/BeverageFactoryServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bf/service/BeverageFactoryServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,7 +24,7 @@
     <option name="myAddOrReplace" value="1" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="349" />
+    <option name="myElementSize" value="356" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -29,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/controller/BeverageFactoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="475">
+              <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,22 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/dto/RequestBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/BevearageFactoryApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/dto/ServiceResponseBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="209">
+              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/exception/CannotExcludeAllIngredientsException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
                 <element signature="e#164#165#0" expanded="true" />
                 <element signature="e#190#191#0" expanded="true" />
@@ -75,41 +68,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/configuration/MenuDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/constants/AppConstants.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/serviceimpl/BeverageFactoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="152">
+              <caret line="103" column="90" selection-start-line="103" selection-start-column="90" selection-end-line="103" selection-end-column="90" />
               <folding>
-                <element signature="e#117#118#0" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/BevearageFactoryApplication.java">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="298">
+              <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -117,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/bf/controller/BeverageFactoryControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+            <state relative-caret-position="1425">
+              <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,19 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/configuration/MenuDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/serviceimpl/BeverageFactoryServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="325">
+              <caret line="52" column="73" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,6 +123,9 @@
       </list>
     </option>
   </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowGroupBy>Package</toolWindowGroupBy>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>syatem.out</find>
@@ -166,6 +135,7 @@
       <find>InvalidRequestException</find>
       <find>BeverageFactoryException</find>
       <find>price</find>
+      <find>itemAndIngredientsMap</find>
     </findStrings>
     <replaceStrings>
       <replace>AppConstants.WATER</replace>
@@ -200,12 +170,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bf/exception/InvalidRequestException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bf/service/FactoryService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/bf/controller/BeverageFactoryControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bf/serviceimpl/BeverageFactoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/bf/service/BeverageFactoryServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/bf/controller/BeverageFactoryController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bf/configuration/MenuDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bf/constants/AppConstants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bf/service/BeverageFactoryServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bf/configuration/MenuDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bf/serviceimpl/BeverageFactoryServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -217,10 +187,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
-    <option name="y" value="-2" />
-    <option name="width" value="1920" />
-    <option name="height" value="1082" />
+    <option name="x" value="258" />
+    <option name="y" value="347" />
+    <option name="width" value="1717" />
+    <option name="height" value="965" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -230,7 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,6 +301,13 @@
               <item name="BeverageFactory" type="b2602c69:ProjectViewProjectNode" />
               <item name="BeverageFactory" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BeverageFactory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BeverageFactory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,7 +347,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -393,7 +370,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BevearageFactoryApplication">
+  <component name="RunManager" selected="JUnit.All in BeverageFactory (1)">
     <configuration name="BevearageFactoryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bf.BevearageFactoryApplication" />
       <module name="BeverageFactory" />
@@ -415,37 +392,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in BeverageFactory (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeverageFactoryControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BeverageFactory" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bf.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bf.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.bf.controller.BeverageFactoryControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in BeverageFactory (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeverageFactoryControllerTest.nullRequestBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BeverageFactory" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bf.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bf.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.bf.controller.BeverageFactoryControllerTest" />
+      <option name="METHOD_NAME" value="nullRequestBean" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in BeverageFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeverageFactoryServiceTest.successTestWithValidData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BeverageFactory" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bf.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bf.service" />
+      <option name="MAIN_CLASS_NAME" value="com.bf.service.BeverageFactoryServiceTest" />
+      <option name="METHOD_NAME" value="successTestWithValidData" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BevearageFactoryApplication" />
-        <item itemvalue="JUnit.All in BeverageFactory" />
-        <item itemvalue="JUnit.All in BeverageFactory (3)" />
-        <item itemvalue="JUnit.All in BeverageFactory (2)" />
         <item itemvalue="JUnit.All in BeverageFactory (1)" />
+        <item itemvalue="Application.BevearageFactoryApplication" />
+        <item itemvalue="JUnit.BeverageFactoryControllerTest.nullRequestBean" />
+        <item itemvalue="JUnit.BeverageFactoryServiceTest.successTestWithValidData" />
+        <item itemvalue="JUnit.BeverageFactoryControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -463,35 +463,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BeverageFactoryControllerTest_invalidQueryParameter - 2019.07.03 at 12h 35m 19s.xml">
-      <configuration name="BeverageFactoryControllerTest.invalidQueryParameter" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BeverageFactoryServiceTest_failureTestWithInvalidData - 2019.07.03 at 12h 41m 16s.xml">
-      <configuration name="BeverageFactoryServiceTest.failureTestWithInvalidData" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BeverageFactoryServiceTest_successTestWithValidData - 2019.07.03 at 12h 41m 21s.xml">
-      <configuration name="BeverageFactoryServiceTest.successTestWithValidData" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_BeverageFactory - 2019.07.03 at 12h 41m 45s.xml">
-      <configuration name="All in BeverageFactory" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BeverageFactoryControllerTest_nullRequestBean - 2019.07.03 at 12h 43m 46s.xml">
-      <configuration name="BeverageFactoryControllerTest.nullRequestBean" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BeverageFactoryControllerTest_nullRequestBean - 2019.07.03 at 12h 45m 33s.xml">
-      <configuration name="BeverageFactoryControllerTest.nullRequestBean" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BeverageFactoryControllerTest_nullRequestBean - 2019.07.03 at 12h 46m 12s.xml">
-      <configuration name="BeverageFactoryControllerTest.nullRequestBean" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_BeverageFactory_(1) - 2019.07.03 at 12h 46m 32s.xml">
-      <configuration name="All in BeverageFactory (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_BeverageFactory_(2) - 2019.07.03 at 12h 48m 17s.xml">
       <configuration name="All in BeverageFactory (2)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_BeverageFactory - 2019.07.03 at 13h 05m 06s.xml">
       <configuration name="All in BeverageFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_BeverageFactory_(4) - 2019.07.03 at 13h 53m 18s.xml">
+      <configuration name="All in BeverageFactory (4)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_BeverageFactory_(1) - 2019.07.03 at 14h 31m 17s.xml">
+      <configuration name="All in BeverageFactory (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_BeverageFactory_(3) - 2019.07.03 at 14h 51m 43s.xml">
+      <configuration name="All in BeverageFactory (3)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_BeverageFactory - 2019.07.08 at 12h 32m 13s.xml">
+      <configuration name="All in BeverageFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeverageFactoryControllerTest - 2019.07.09 at 12h 18m 38s.xml">
+      <configuration name="BeverageFactoryControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeverageFactoryServiceTest_successTestWithValidData - 2019.07.09 at 12h 25m 24s.xml">
+      <configuration name="BeverageFactoryServiceTest.successTestWithValidData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BeverageFactoryControllerTest_nullRequestBean - 2019.07.09 at 16h 29m 16s.xml">
+      <configuration name="BeverageFactoryControllerTest.nullRequestBean" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_BeverageFactory_(1) - 2019.07.11 at 14h 42m 11s.xml">
+      <configuration name="All in BeverageFactory (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -504,21 +504,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22785486" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="PMD" order="0" weight="0.32948583" />
+      <window_info active="true" anchor="bottom" id="PMD" order="0" visible="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Messages" order="1" weight="0.32948583" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.2854145" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.5097192" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.3924449" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -526,8 +526,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32948583" />
       <window_info anchor="bottom" id="SonarLint" order="10" weight="0.32738718" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32984293" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" visible="true" weight="0.23609653" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="12" weight="0.32948583" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.23609653" />
       <window_info anchor="bottom" id="Thumbnails" order="14" weight="0.32948583" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -591,7 +591,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/bf/serviceimpl/BeverageFactoryServiceImpl.java</url>
-          <line>62</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -624,9 +624,10 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BeverageFactory$All_in_BeverageFactory.ic" NAME="All in BeverageFactory Coverage Results" MODIFIED="1562139295115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/BeverageFactory$All_in_BeverageFactory__1_.ic" NAME="All in BeverageFactory (1) Coverage Results" MODIFIED="1562138182573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/BeverageFactory$All_in_BeverageFactory__3_.ic" NAME="All in BeverageFactory (3) Coverage Results" MODIFIED="1562078608726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BeverageFactory$All_in_BeverageFactory__4_.ic" NAME="All in BeverageFactory (4) Coverage Results" MODIFIED="1562142187661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BeverageFactory$All_in_BeverageFactory.ic" NAME="All in BeverageFactory Coverage Results" MODIFIED="1562569321997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BeverageFactory$All_in_BeverageFactory__1_.ic" NAME="All in BeverageFactory (1) Coverage Results" MODIFIED="1562144464874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BeverageFactory$All_in_BeverageFactory__3_.ic" NAME="All in BeverageFactory (3) Coverage Results" MODIFIED="1562145692604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/BeverageFactory$All_in_BeverageFactory__2_.ic" NAME="All in BeverageFactory (2) Coverage Results" MODIFIED="1562138287025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="debuggerHistoryManager">
@@ -728,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -744,34 +738,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/exception/BeverageFactoryException.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/exception/InvalidRequestException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/exception/IllegalIngredientException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/service/FactoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/bf/service/BeverageFactoryServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -779,61 +745,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/constants/AppConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="98" selection-start-line="14" selection-start-column="98" selection-end-line="14" selection-end-column="98" />
+          <folding>
+            <element signature="e#117#118#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bf/service/BeverageFactoryServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/dto/RequestBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/dto/ServiceResponseBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/exception/CannotExcludeAllIngredientsException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/controller/BeverageFactoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="475">
+          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/serviceimpl/BeverageFactoryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/service/FactoryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/bf/controller/BeverageFactoryControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+        <state relative-caret-position="1425">
+          <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/configuration/MenuDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="52" column="73" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -842,33 +822,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/BevearageFactoryApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="209">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/configuration/MenuDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/dto/ServiceResponseBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/constants/AppConstants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/exception/IllegalIngredientException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="76">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding>
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/exception/CannotExcludeAllIngredientsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bf/serviceimpl/BeverageFactoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="103" column="90" selection-start-line="103" selection-start-column="90" selection-end-line="103" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

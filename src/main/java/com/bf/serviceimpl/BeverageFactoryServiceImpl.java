@@ -56,8 +56,11 @@ public class BeverageFactoryServiceImpl implements FactoryService {
                         .map(x -> x.replace("-", ""))
                         .collect(Collectors.toList());
 
-                if (!menuMap.containsKey(menu.get(0).toLowerCase()))
+                if (!menuMap.containsKey(menu.get(0).toLowerCase())){
+                    if (ingredientsMap.containsKey(menu.get(0)))
+                        throw new IllegalIngredientException("Ingredients can only be ordered with menu Item."+ menu.get(0));
                     throw new IllegalIngredientException("Invalid menu item found in the order: " + menu.get(0));
+                }
 
                 //varifying order query string
                 if (isValidOrder(itemAndIngredientsMap, menu)) {
@@ -98,13 +101,12 @@ public class BeverageFactoryServiceImpl implements FactoryService {
     private boolean isValidOrder(Map<String, List<String>> itemAndIngredientsMap, List<String> menu) {
         boolean isValid = false;
         if (null != itemAndIngredientsMap.get(menu.get(0).toLowerCase())) {
-            List productIngredient = itemAndIngredientsMap.get(menu.get(0).toLowerCase())
-                    .stream().map(x -> x.replaceAll("-", ""))
-                    .collect(Collectors.toList());
-            isValid = true;
+            List productIngredient = itemAndIngredientsMap.get(menu.get(0).toLowerCase());
+
             if (menu.size() > 1 && !productIngredient.containsAll(menu.subList(1, menu.size()))) {
                 throw new IllegalIngredientException("Invalid ingredient found in the order.");
             }
+            isValid = true;
         }
         return isValid;
     }
